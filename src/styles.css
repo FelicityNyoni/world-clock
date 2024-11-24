@@ -1,11 +1,66 @@
 body {
-    background: rgb(0, 85, 128);
+    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
 }
 
 h1 {
+    font-size: 60px;
+    font-weight: bolder;
     text-align: center;
 }
 
 footer {
     text-align: center;
+}
+
+select {
+    background: white;
+    border: 10px strong blue;
+    border-radius: 10px;
+    padding: 15px; 
+    width: 100%; 
+}
+
+small {
+    font-size: 15px;
+    position: relative;
+    bottom: -18px;
+}
+
+.city {
+    border-bottom: 1px dashed grey;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px o;
+}
+
+.city:last-child {
+    border: none;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 15px 10px 15px rgba(0,0,0, 0.9);
+    font-family:Protest Revolution ;
+    margin: 80px 0;
+    padding: 20px;
+    transition: all 250ms ease-in-out;
+}
+
+.container:hover {
+    background: linear-gradient(78.1deg, rgb(177, 14, 236) 5.5%, rgb(255, 19, 15) 92.8%);
+}
+
+.date {
+  position: relative; 
+  right: 160px;
+  bottom: -50px;
+}
+
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 48px;
 }
