@@ -17,6 +17,15 @@ let londonTime = moment().tz("Europe/London");
 londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
 londonTimeElement.innerHTML = londonTime.format("h:mm:ss [<small>]A[</small>]");
 }
+let parisElement = document.querySelector("#paris");
+if (parisElement) {
+let parisDateElement = parisElement.querySelector(".date");
+let parisTimeElement = parisElement.querySelector(".time");
+let parisTime = moment().tz("Europe/Paris");
+
+parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
+parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
+}
 }
 
 function updateCity(event) {
@@ -36,7 +45,7 @@ function updateCity(event) {
         </div>
         <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small</div>
          </div>
-         <a href ="/"></a>`;
+         <a href="/"></a>`;
 }
 }
 updateTime();
